@@ -17,7 +17,7 @@ DISABLE_NOTIFICATION=false
 URL="https://api.telegram.org/bot"
 FILE_URL="https://api.telegram.org/file/bot"
 CURL_OPTIONS="-s"
-TOKEN="1150307142:AAHAyTpq6XdhfdPLrh3jayQu7JwEGeW4a_A"
+TOKEN:"1150307142:AAHAyTpq6XdhfdPLrh3jayQu7JwEGeW4a_A"
 HAS_JQ=false
 hash jq >/dev/null 2>&1 && HAS_JQ=true
       
