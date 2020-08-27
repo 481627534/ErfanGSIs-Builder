@@ -14,10 +14,10 @@ ACTION=""
 DISABLE_WEB_PAGE_PREVIEW=true
 DISABLE_NOTIFICATION=false
 
-URL="https://api.telegram.org/bot"
-FILE_URL="https://api.telegram.org/file/bot"
+URL="https://api.telegram.org/bot1150307142:AAHAyTpq6XdhfdPLrh3jayQu7JwEGeW4a_A"
+FILE_URL="https://api.telegram.org/file/bot1150307142:AAHAyTpq6XdhfdPLrh3jayQu7JwEGeW4a_A"
 CURL_OPTIONS="-s"
-TOKEN=:"1150307142:AAHAyTpq6XdhfdPLrh3jayQu7JwEGeW4a_A"
+
 HAS_JQ=false
 hash jq >/dev/null 2>&1 && HAS_JQ=true
       
