@@ -3,10 +3,10 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/NusantaraProject//jasmine_sprout/Nusantara_v1.0-jasmine_sprout-14082020-OFFICIAL-0602.zip
-  ROM_NAME: Generic:Nusantara_v1
-  ZIP_NAME: Nusantara_v1
-  TZ: America/Sao_Paulo
+  ROM_URL: https://cdn-test-ota.blackshark.com/KLE-A0/20200824165442-klein-ota-signed_by_xiaomi_505c8c3e621a25b4dd3eab6a4e49b3e1.zip
+  ROM_NAME: JoyUI
+  ZIP_NAME: JoyUI
+  TZ: Asia/Shanghai
   MIR: gof
 jobs:
   build:
