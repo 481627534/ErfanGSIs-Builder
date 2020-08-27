@@ -14,8 +14,8 @@ ACTION=""
 DISABLE_WEB_PAGE_PREVIEW=true
 DISABLE_NOTIFICATION=false
 
-URL="https://api.telegram.org/bot1150307142:AAHAyTpq6XdhfdPLrh3jayQu7JwEGeW4a_A"
-FILE_URL="https://api.telegram.org/file/bot1150307142:AAHAyTpq6XdhfdPLrh3jayQu7JwEGeW4a_A"
+URL="https://api.telegram.org/bot"
+FILE_URL="https://api.telegram.org/file/bot"
 CURL_OPTIONS="-s"
 
 HAS_JQ=false
