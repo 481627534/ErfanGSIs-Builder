@@ -11,7 +11,7 @@ env:
   MIR2: trs
   MIR3: wet
   MIR4: cow
-  jobs:
+jobs:
   build:
     runs-on: ubuntu-latest
 
