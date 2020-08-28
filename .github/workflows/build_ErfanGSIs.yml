@@ -3,7 +3,7 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://cdn-test-ota.blackshark.com/KLE-A0/20200824165442-klein-ota-signed_by_xiaomi_505c8c3e621a25b4dd3eab6a4e49b3e1.zip
+  ROM_URL: http://cdn-ota.blackshark.com/kle-A0/20200807162741-klein-ota-signed_by-xiaomi_e806d3e500429fadac9deb16f309e70c.zip
   ROM_NAME: JoyUI
   ZIP_NAME: JoyUI
   TZ: America/Sao_Paulo
