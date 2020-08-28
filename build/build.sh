@@ -19,7 +19,3 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
     echo "::set-env name=DOWNLOAD_AB::$(./transfer $MIR "$ZIP_NAME-AB-$sourcever2-$date2-ErfanGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
     echo "::set-env name=DOWNLOAD_A2::$(./transfer $MIR2 "$ZIP_NAME-Aonly-$sourcever2-$date2-ErfanGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
     echo "::set-env name=DOWNLOAD_AB2::$(./transfer $MIR2 "$ZIP_NAME-AB-$sourcever2-$date2-ErfanGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
-    echo "::set-env name=DOWNLOAD_A3::$(./transfer $MIR3 "$ZIP_NAME-Aonly-$sourcever2-$date2-ErfanGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
-    echo "::set-env name=DOWNLOAD_AB3::$(./transfer $MIR3 "$ZIP_NAME-AB-$sourcever2-$date2-ErfanGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
-    echo "::set-env name=DOWNLOAD_A4::$(./transfer $MIR4 "$ZIP_NAME-Aonly-$sourcever2-$date2-ErfanGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
-    echo "::set-env name=DOWNLOAD_AB4::$(./transfer $MIR4 "$ZIP_NAME-AB-$sourcever2-$date2-ErfanGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
