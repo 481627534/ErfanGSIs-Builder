@@ -16,14 +16,6 @@ jobs:
        - name: Checkout
          uses: actions/checkout@master
 
-       - name: Initializing telegram bot
-         env:
-              TOKEN: ${{ secrets.BOT_TOKEN }}
-
-         run: |
-              sudo install telegram /usr/bin
-              chmod +x build/initial.sh
-              . build/initial.sh
 
        - name: Set up python
          uses: actions/setup-python@v2
@@ -44,8 +36,6 @@ jobs:
               sudo bash setup.sh
 
        - name: Execute Shell Script
-         env:
-              TOKEN: ${{ secrets.BOT_TOKEN }}
               
          run: |
                chmod +x build/build.sh
@@ -61,12 +51,3 @@ jobs:
        - name: Print AB build info
          run: |
               cat ErfanGSIs/output/*-AB-*.txt
-
-       - name: Send build info to Telegram
-         env:
-              CHAT_ID: ${{ secrets.CHAT_ID }}
-              BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-              API_ID: ${{ secrets.API_ID }}
-              API_HASH: ${{ secrets.API_HASH }}
-         run: |
-              python .github/workflows/robot.py
