@@ -53,13 +53,6 @@ jobs:
          run: |
               cat ErfanGSIs/output/*-AB-*.txt
 
-       - name: Upload Aonly GSI Images
-         uses: actions/upload-artifact@v2
-         with:
-           name: Aonly-Image
-           path: ErfanGSIs/output/*-Aonly-*.img
-           if-no-files-found: error
-
        - name: Upload AB GSI Images
          uses: actions/upload-artifact@v2
          with:
