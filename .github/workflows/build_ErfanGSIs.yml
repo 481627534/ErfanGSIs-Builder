@@ -28,7 +28,7 @@ jobs:
               pip install pyrogram tgcrypto
 
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/HitaloSama/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/amyGSI/ErfanGSIs.git
 
        - name: Setting up ErfanGSI requirements
          run: |
@@ -57,14 +57,14 @@ jobs:
          uses: actions/upload-artifact@v2
          with:
            name: Aonly-Image
-           path: ErfanGSIs/output/"$ZIP_NAME-Aonly-$sourcever2-$date2-ErfanGSI.7z"
+           path: ErfanGSIs/output/"$ZIP_NAME-Aonly-10-20200829-ErfanGSI.7z"
            if-no-files-found: error
 
        - name: Upload AB GSI Images
          uses: actions/upload-artifact@v2
          with:
            name: Aonly-Image
-           path: ErfanGSIs/output/"$ZIP_NAME-AB-$sourcever2-$date2-ErfanGSI.7z"
+           path: ErfanGSIs/output/"$ZIP_NAME-AB-10-20200829-ErfanGSI.7z"
            if-no-files-found: error
     
 
