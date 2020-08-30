@@ -7,8 +7,8 @@ env:
   ROM_NAME: JoyUI
   ZIP_NAME: JoyUI
   TZ: America/Sao_Paulo
-  MIR: wss
-  MIR2: arp
+  MIR: gof
+  MIR2: trs
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -52,12 +52,19 @@ jobs:
        - name: Print AB build info
          run: |
               cat ErfanGSIs/output/*-AB-*.txt
-
+       
+       - name: Upload A-Only GSI Images
+         uses: actions/upload-artifact@v2
+         with:
+           name: Aonly-Image
+           path: ErfanGSIs/output/*Aonly.7z
+           if-no-files-found: error
+       
        - name: Upload AB GSI Images
          uses: actions/upload-artifact@v2
          with:
            name: Aonly-Image
-           path: ErfanGSIs/output/*-AB-*.img
+           path: ErfanGSIs/output/*AB.7z
            if-no-files-found: error
     
 
