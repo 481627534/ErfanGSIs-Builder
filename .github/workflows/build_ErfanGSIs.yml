@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: http://cdn-ota.blackshark.com/KLE-A0/20200807162741-klein-ota-signed_by_xiaomi_e806d3e500429fadac9deb16f309e70c.zip
-  ROM_NAME: JoyUI
-  ZIP_NAME: JoyUI
+  ROM_URL: https://hugeota.d.miui.com/20.6.18/miui_MI6_20.6.18_3f5b90d469_9.0.zip
+  ROM_NAME: miui
+  ZIP_NAME: miui
   TZ: America/Sao_Paulo
   MIR: gof
   MIR2: trs
